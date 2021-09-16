@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="./CSS/stylesheet.css" />
+        <title>Dojonary</title>
+	</head>	
+	<body>
+		<div class="navBar">
+            <h1 class="nav-title">Dojonary</h1>
+    		<!--<textarea id="description" name="descrition" > </textarea> Questions 
+			Is better to use text area or input tag for searching boxes?-->
+			<input type="Text" id="emailAddress" placeholder="Search"/>
+			<button type="submit" class="login" onclick="logButton(this)">
+				Login
+			</button>
+        </div>  
+		<div class="definitionsContainer"> <!--Here starts code for main container-->
+			<div class="definition1">
+                <h2 class="title">ninja</h2>
+				<div class="content1">
+					<div class="leftSide">
+						<div class="defBox">
+							<p id="noun1">
+								<span id="nounTitle1">noun</span>
+							</p>
+							<p>
+								Plural: ninjas
+							</p>
+						</div>	
+						<button type="submit" class="likes" onclick="displayMessage(this)">
+							13 likes
+						</button>
+					</div>
+					<div class="rightSide">
+							<p>
+								A practioner skilled in the 
+								<br/><span class="hyperlink">Japanese</span > art of <span class="hyperlink">ninjutsu</span>
+							</p>
+					</div>	
+				</div>
+            </div>
+			<div class="definition2">
+                <h2 class="title">ninja</h2>
+				<div class="content2">
+					<div class="leftSide">
+						<div class="defBox">
+							<p id="noun2">
+								<span id="nounTitle2">noun</span>
+							</p>
+							<p >
+								Plural: ninjas
+							</p>
+						</div>	
+						<button type="submit" class="likes" onclick="displayMessage(this)">
+							37 likes
+						</button>
+					</div>
+					<div class="rightSide">
+							<p>
+								A <span class="hyperlink">programmer</span> who breaks 
+								<br/>downs problems with <span class="hyperlink">zen</span>-like 
+								<br/>focus
+							</p>
+					</div>	
+				</div>
+            </div>
+		</div> 
+		<div class="addContainer"><!--Here start code for second container-->
+			<p class="addText">
+				Dojonary is 
+			<br/>
+				defined by You
+			</p>
+			<button type="submit" class="definition" onclick="hide(this)">
+				Add definition
+			</button>
+		</div>
+		<footer>
+			
+		</footer>
+		<script src="./js/index.js"></script>
+    </body>
+</html>
